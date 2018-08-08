@@ -1,4 +1,3 @@
-module.exports = surveysArray;
 
 let surveysArray = [
     {
@@ -34,4 +33,7 @@ let surveysArray = [
         ]
     }
 ];
+
+module.exports = surveysArray;
+
 
