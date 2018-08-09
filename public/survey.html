@@ -76,7 +76,8 @@
                     <div class="form-group p-2">
                         <label for="question1">Your brother is watching the baseball game like he always does on Tuesday night, but you told him
                             3 days ago about your plans to watch Dancing With the Stars tonight with your bestie. He should
-                            bail.</label>
+                            bail.
+                        </label>
                         <select class="form-control custom-select" id="question3">
                             <!-- <option selected>Open this select menu</option> -->
                             <option value="1">Strongly Disagree</option>
@@ -142,7 +143,8 @@
                     <div class="form-group p-2">
                         <label for="question1">Your brother is watching the baseball game like he always does on Tuesday night, but you told him
                             3 days ago about your plans to watch Dancing With the Stars tonight with your bestie. He should
-                            bail.</label>
+                            bail.
+                        </label>
                         <select class="form-control custom-select" id="question8">
                             <!-- <option selected>Open this select menu</option> -->
                             <option value="1">Strongly Disagree</option>
@@ -194,7 +196,7 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
-        //MY SCRIPT HERE://
+        
         $("#home").on("click", function () {
             event.preventDefault();
         })
@@ -213,8 +215,9 @@
                 type: 'POST',
                 url: "/api/submit",
                 data: newFriend,
-            }).then((data) => {
-                console.log(data);
+                success: function (resp) {
+                    //FUNCTION TO BLAZE A DYNAMIC MODAL USING RESPONSE DATA WILL GO HERE
+                }
             })
 
         });

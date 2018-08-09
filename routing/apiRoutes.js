@@ -17,11 +17,12 @@ module.exports = function (app) {
     //CONVERT STRING NUM SCORES INTO NUM SCORES:
     let strScores = req.body.scores;
     let scores = strScores.map(score => Number(score));
-    //SET NEWFRIEND OBJECT SCORES TO NUM SCORES:
     newFriend.scores = scores;
     //PUSH NEWFRIEND ONTO SURVEYDATA:
     surveyData.push(newFriend);
     console.log(surveyData);
+    // IDENTIFY THE CLOSEST MATCH AND SEND IT BACK (REPLACING NEW FRIEND BELOW):
+    res.json(newFriend);
   });
 
   app.post("/api/clear", function () {
