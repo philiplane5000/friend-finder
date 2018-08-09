@@ -30,7 +30,7 @@ module.exports = function (app) {
       resultsArray.push(magicNumber);
     })
 
-    let finalMagicNumber = 51;
+    let finalMagicNumber = 100;
     let finalMagicIndex = 0;
     resultsArray.forEach(function (number, index) {
       if (number <= finalMagicNumber) {
@@ -38,9 +38,8 @@ module.exports = function (app) {
         finalMagicIndex = index;
       }
     })
-    console.log(`CLOSEST MATCH INDEX: ${finalMagicIndex}`);
 
-    //SEND BACK OBJECT FOR MATCHING FRIEND (survey.html will deal with the response it receives):
+    //SEND BACK OBJECT FOR MATCHING FRIEND:
     res.json(surveyData[finalMagicIndex]);
     //PUSH NEWFRIEND ONTO SURVEYDATA:
     surveyData.push(newFriend);
@@ -49,7 +48,6 @@ module.exports = function (app) {
   app.post("/api/clear", function () {
     // Empty out the arrays of data
     surveyData = [];
-    console.log(surveyData);
   });
 
 };

@@ -215,13 +215,17 @@
                 type: 'POST',
                 url: "/api/submit",
                 data: newFriend,
-                success: function (resp) {
-                    //FUNCTION TO BLAZE A DYNAMIC MODAL USING RESPONSE DATA WILL GO HERE
-                    console.log(JSON.stringify(resp));
-                }
+                success: displayModal(resp)
             })
 
         });
+
+        function displayModal(response) {
+            let name = response.name;
+            let photoLink = response.photo;
+            console.log(name);
+            console.log(photoLink);
+        }
 
     }); /*END DOCUMENT READY*/
 
