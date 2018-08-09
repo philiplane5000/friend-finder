@@ -33,7 +33,7 @@ let surveysArray = [
         ]
     },
     {
-        "name": "Karen",
+        "name": "Julia",
         "photo": "https://ia.media-imdb.com/images/M/MV5BMjAxMDY4MzU5OV5BMl5BanBnXkFtZTgwODc0NzIwNDI@._CR263,305,678,678_UX402_UY402._SY201_SX201_AL_.jpg",
         "scores": [
             3,
