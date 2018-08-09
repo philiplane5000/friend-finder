@@ -196,7 +196,7 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
-        
+
         $("#home").on("click", function () {
             event.preventDefault();
         })
@@ -208,7 +208,7 @@
             let newFriend = {
                 name: $("#name").val().trim(),
                 photo: $("#pic").val().trim(),
-                scores: [$("question1").val(), $("#question2").val(), $("#question3").val(), $("#question4").val(), $("#question5").val(), $("#question6").val(), $("#question7").val(), $("#question8").val(), $("#question9").val(), $("#question9").val()]
+                scores: [$("#question1").val(), $("#question2").val(), $("#question3").val(), $("#question4").val(), $("#question5").val(), $("#question6").val(), $("#question7").val(), $("#question8").val(), $("#question9").val(), $("#question10").val()]
             };
 
             $.ajax({
@@ -217,6 +217,7 @@
                 data: newFriend,
                 success: function (resp) {
                     //FUNCTION TO BLAZE A DYNAMIC MODAL USING RESPONSE DATA WILL GO HERE
+                    console.log(JSON.stringify(resp));
                 }
             })
 

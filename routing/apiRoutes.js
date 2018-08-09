@@ -21,19 +21,29 @@ module.exports = function (app) {
 
     // IDENTIFY THE CLOSEST MATCH FOR NEWFRIEND AND SEND IT BACK:
     let resultsArray = [];
-    surveyData.forEach(function(friend) {  
+
+    surveyData.forEach(function (friend) {
       let magicNumber = 0;
-      for(let i = 0; i < friend.scores.length; i++) {
+      for (let i = 0; i < friend.scores.length; i++) {
         magicNumber += Math.abs(incomingScores[i] - friend.scores[i]);
       }
       resultsArray.push(magicNumber);
     })
-    console.log(resultsArray);
 
+    let finalMagicNumber = 51;
+    let finalMagicIndex = 0;
+    resultsArray.forEach(function (number, index) {
+      if (number <= finalMagicNumber) {
+        finalMagicNumber = number;
+        finalMagicIndex = index;
+      }
+    })
+    console.log(`CLOSEST MATCH INDEX: ${finalMagicIndex}`);
+
+    //SEND BACK OBJECT FOR MATCHING FRIEND (survey.html will deal with the response it receives):
+    res.json(surveyData[finalMagicIndex]);
     //PUSH NEWFRIEND ONTO SURVEYDATA:
     surveyData.push(newFriend);
-    //SEND BACK OBJECT FOR MATCHING FRIEND (survey.html will deal with the response it receives):
-    res.json(newFriend);
   });
 
   app.post("/api/clear", function () {
