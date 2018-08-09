@@ -2,7 +2,7 @@
 let surveysArray = [
     {
         "name": "Elizabeth",
-        "photo": "https://avatarfiles.alphacoders.com/114/114469.png",
+        "photo": "https://vignette.wikia.nocookie.net/joke-battles/images/9/99/Teacup-760x506.jpg/revision/latest?cb=20180722021804",
         "scores": [
             4,
             3,
@@ -17,8 +17,8 @@ let surveysArray = [
         ]
     },
     {
-        "name": "Kristof",
-        "photo": "https://avatarfiles.alphacoders.com/114/114469.png",
+        "name": "Bilbo Baggins",
+        "photo": "https://pbs.twimg.com/profile_images/982369399809200130/VemfOnCF_400x400.jpg",
         "scores": [
             5,
             1,
@@ -34,7 +34,7 @@ let surveysArray = [
     },
     {
         "name": "Karen",
-        "photo": "https://avatarfiles.alphacoders.com/114/114469.png",
+        "photo": "https://ia.media-imdb.com/images/M/MV5BMjAxMDY4MzU5OV5BMl5BanBnXkFtZTgwODc0NzIwNDI@._CR263,305,678,678_UX402_UY402._SY201_SX201_AL_.jpg",
         "scores": [
             3,
             2,
@@ -50,7 +50,7 @@ let surveysArray = [
     },
     {
         "name": "Bob",
-        "photo": "https://avatarfiles.alphacoders.com/114/114469.png",
+        "photo": "https://pbs.twimg.com/profile_images/999306909600501761/PlDpesZh_400x400.jpg",
         "scores": [
             1,
             4,
@@ -66,7 +66,7 @@ let surveysArray = [
     },
     {
         "name": "Bill",
-        "photo": "https://avatarfiles.alphacoders.com/114/114469.png",
+        "photo": "https://pbs.twimg.com/profile_images/451207149478096896/HoMUOmyu_400x400.jpeg",
         "scores": [
             5,
             5,
@@ -81,8 +81,8 @@ let surveysArray = [
         ]
     },
     {
-        "name": "Susan",
-        "photo": "https://avatarfiles.alphacoders.com/114/114469.png",
+        "name": "Craig",
+        "photo": "https://m.media-amazon.com/images/M/MV5BMjEzMjk4NDU4MF5BMl5BanBnXkFtZTcwMDMyNjQzMg@@._V1_UX214_CR0,0,214,317_AL_.jpg",
         "scores": [
             1,
             5,
@@ -97,8 +97,8 @@ let surveysArray = [
         ]
     },
     {
-        "name": "Caroline",
-        "photo": "https://avatarfiles.alphacoders.com/114/114469.png",
+        "name": "Jeff",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Jeff_Bridges_by_Gage_Skidmore_3.jpg/220px-Jeff_Bridges_by_Gage_Skidmore_3.jpg",
         "scores": [
             1,
             1,

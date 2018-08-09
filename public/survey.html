@@ -189,6 +189,28 @@
 
     </div>
 
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Your Match!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 id="matchName" class="m-3 text-center">Katherine</h5>
+                    <img src="http://via.placeholder.com/300x300" alt="profilePic" id="matchPic" class="m-3 rounded mx-auto d-block">
+
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
@@ -215,17 +237,17 @@
                 type: 'POST',
                 url: "/api/submit",
                 data: newFriend,
-                success: displayModal(resp)
+                success: function (response) {
+                    let name = response.name;
+                    let photoLink = response.photo;
+                    $("#exampleModalCenter").modal('toggle');
+                    $("#matchName").text(name);
+                    $("#matchPic").attr("src", photoLink);
+
+                }
             })
 
         });
-
-        function displayModal(response) {
-            let name = response.name;
-            let photoLink = response.photo;
-            console.log(name);
-            console.log(photoLink);
-        }
 
     }); /*END DOCUMENT READY*/
 
