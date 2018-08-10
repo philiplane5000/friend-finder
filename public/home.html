@@ -14,39 +14,76 @@
         crossorigin="anonymous"></script> -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <style>
+        body {
+            background: #304352;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #d7d2cc, #304352);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #d7d2cc, #304352);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        .jmbo {
+            padding-left: 40px;
+        }
+
+        a {
+            color: slategray;
+        }
+
+        a:hover, a:focus, a:active {
+            text-decoration: none;
+        }
+
+    </style>
+
 </head>
 
 <body>
     <div class="container">
 
+        <!-- <div class="row"> -->
+        <!-- <div class="col"> -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container jmbo">
+                <h1 class="display-3">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>&nbsp;Friend Finder.</h1>
+                <p class="lead">Where a ten question survey delivers you a new companion.</p>
+                <a href="/survey"><button class="btn btn-lg btn-info mt-3">TAKE SURVEY</button></a> 
 
-        <div class="row">
-            <div class="col">
-                <div class="jumbotron jumbotron-fluid">
-                    <div class="container">
-                        <h1 class="display-4">WELCOME TO FRIEND FINDER!</h1>
-                        <p class="lead">Where a ten question survey delivers you a new companion.</p>
-                    </div>
-                </div>
             </div>
         </div>
+        <!-- </div> -->
+        <!-- </div> -->
 
+        <footer class="footer">
+            <div class="container foot-container justify-content-center">
+                <p>
+                    <a href="/api/friends">API Friends List</a> &nbsp; | &nbsp;
+                    <a href="https://github.com/philiptd5000/friend-finder">GitHub Repo</a>
+                </p>
+            </div>
+        </footer>
+        <!--           
         <div class="row">
             <div class="col">
-
-                <ul class="nav justify-content-center">
+                <ul class="nav ml-2 mb-4">
                     <li class="nav-item">
-                        <a class="nav-link" href="/survey">TAKE THE SURVEY</a>
+                        <button class="btn btn-skyblue">TAKE SURVEY</button>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="/api/friends">VIEW POSSIBLE FRIENDS</a>
+                        <a class="nav-link disabled" href="/api/friends">FRIENDS API</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="https://github.com/philiptd5000/friend-finder">GITHUB REPO</a>
                     </li>
                 </ul>
 
             </div>
-        </div>
-
-
+        </div> -->
 
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
