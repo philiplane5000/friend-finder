@@ -20,15 +20,15 @@ let surveysArray = [
         "name": "Bilbo Baggins",
         "photo": "https://pbs.twimg.com/profile_images/982369399809200130/VemfOnCF_400x400.jpg",
         "scores": [
-            5,
             1,
-            4,
-            4,
-            5,
+            1,
             1,
             2,
-            5,
-            4,
+            3,
+            1,
+            2,
+            1,
+            2,
             1
         ]
     },
@@ -101,13 +101,13 @@ let surveysArray = [
         "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Jeff_Bridges_by_Gage_Skidmore_3.jpg/220px-Jeff_Bridges_by_Gage_Skidmore_3.jpg",
         "scores": [
             1,
-            1,
+            5,
             1,
             2,
             3,
-            1,
+            5,
             2,
-            1,
+            5,
             2,
             1
         ]
